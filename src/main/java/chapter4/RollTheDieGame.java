@@ -1,7 +1,6 @@
 package chapter4;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class RollTheDieGame {
     public static void main(String[] args) {
@@ -16,7 +15,7 @@ public class RollTheDieGame {
             int die = random.nextInt(6) + 1;
             currentSpace = currentSpace + die;
 
-            if((currentSpace == space) && (i <= roll)){
+            if(currentSpace == space){
                 System.out.println("Roll #" + i + ": You've rolled a " + die + ". You're on space 20. Congrats, you win!");
                 break;
             }
